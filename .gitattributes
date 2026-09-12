@@ -1,0 +1,29 @@
+# ==============================================================
+# neumanntechtips-resources: .gitattributes
+# Normalise line endings and mark binary files so Git never
+# tries to diff or merge them as text.
+# ==============================================================
+
+# Default: detect text and store with LF line endings
+* text=auto eol=lf
+
+# Text formats
+*.md        text diff=markdown
+*.txt       text
+*.sql       text
+*.csv       text
+*.json      text
+*.yaml      text
+*.yml       text
+LICENSE     text
+
+# Binary formats
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.webp      binary
+*.pdf       binary
+
+# Keep the licence out of language statistics and diff summaries
+LICENSE     linguist-vendored

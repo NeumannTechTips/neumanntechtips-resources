@@ -1,0 +1,65 @@
+# ==============================================================
+# neumanntechtips-resources: .gitignore
+#
+# This repository is PUBLIC and contains text only. Nothing that
+# could carry real data, credentials or personal information is
+# ever committed. These patterns are a safety net, not a
+# substitute for checking `git status` before every commit.
+# ==============================================================
+
+# --- Never, under any circumstances -------------------------
+*.env
+.env*
+*.key
+*.pem
+*.pfx
+*.p12
+credentials*
+secrets*
+*_secret*
+*token*
+*apikey*
+*api_key*
+
+# --- Real or potentially real data --------------------------
+# Sample data belongs in a fenced block inside a prompt file,
+# generated synthetically. Loose data files do not belong here.
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+*.sql.gz
+*.dump
+/data/
+/extracts/
+/scratch/
+
+# --- Editor and OS noise ------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.directory
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Build and tooling --------------------------------------
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ruff_cache/
+.pytest_cache/
+
+# --- Local notes not intended for publication ---------------
+NOTES.local.md
+TODO.local.md
+*.local.md
