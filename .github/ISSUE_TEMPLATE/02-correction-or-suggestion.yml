@@ -1,0 +1,56 @@
+name: "✏️ Correction or suggestion"
+description: Something here is wrong, unclear, or missing.
+title: "[correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before you write anything
+
+        **Do not paste real data.** Describe the shape of the problem rather than
+        showing it. If a defect pattern from your own work is the point, describe
+        the pattern and invent the values.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of thing is this?
+      options:
+        - A factual error
+        - Something unclear or hard to follow
+        - A defect pattern that is not covered
+        - A query that does not work on my database dialect
+        - Something else
+    validations:
+      required: true
+
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: File path, or "the README", or "the whole pack".
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: What is wrong, or what is missing
+      description: If you are reporting a factual error, a source helps a great deal.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would you put instead
+      description: Optional. A rough idea is more useful than nothing.
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: This issue contains no real data, no client information and nothing identifying.
+          required: true

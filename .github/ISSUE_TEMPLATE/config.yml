@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask about a video
+    url: https://www.youtube.com/@NeumannTechTips
+    about: Questions about an episode are best asked as a comment on that video.
+  - name: Anything private
+    url: mailto:NeumannTechTips@pm.me
+    about: Email instead of opening a public issue. Never include real data.

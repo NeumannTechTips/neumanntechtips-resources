@@ -1,0 +1,67 @@
+name: "🐛 Prompt failure"
+description: A prompt did not behave the way its file says it does.
+title: "[failure] "
+labels: ["prompt-failure"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before you write anything
+
+        **Do not paste real data.** No records, no production schemas, no internal
+        system names, no screenshots of live tables. Describe the shape of the
+        problem instead. An issue containing real data is deleted rather than
+        edited, because editing does not remove it from the history.
+
+  - type: input
+    id: prompt
+    attributes:
+      label: Which prompt
+      description: Path or title, for example packs/data-readiness/prompts/01-column-profile.md
+      placeholder: packs/data-readiness/prompts/...
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: Model and version
+      description: Be specific. "ChatGPT" cannot be acted on; a version can.
+      placeholder: e.g. Claude Opus 5, GPT-5.2, Gemini 3 Pro, Llama 3.3 70B via Ollama
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What the file says should happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+      description: Paste the model's output only if it contains nothing real. Summarise it if in doubt.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Does it happen every time?
+      options:
+        - Every time
+        - Most times
+        - Once, and I could not repeat it
+        - Not sure
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: This issue contains no real data, no client information and nothing identifying.
+          required: true
