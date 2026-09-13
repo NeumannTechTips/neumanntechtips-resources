@@ -17,6 +17,7 @@
 [![Packs](https://img.shields.io/badge/packs-1%20live%20·%204%20planned-2F5F7B?labelColor=0B2039)](#-packs)
 [![Language](https://img.shields.io/badge/language-UK%20English-2F5F7B?labelColor=0B2039)](#-house-rules)
 [![Cost](https://img.shields.io/badge/cost-free%2C%20no%20sign%20up-8FA3B8?labelColor=0B2039)](#-licence)
+[![Disclaimer](https://img.shields.io/badge/general%20information-not%20advice-F2A93B?labelColor=0B2039)](DISCLAIMER.md)
 
 `#PracticalAI` `#PromptEngineering` `#DataQuality` `#AIGovernance` `#LocalAI` `#OpenWeight` `#Claude` `#ChatGPT` `#Gemini` `#Copilot` `#Ollama` `#NeumannTechTips`
 
@@ -33,6 +34,7 @@
 - [Repository map](#-repository-map)
 - [House rules](#-house-rules)
 - [Contributing](#-contributing)
+- [Disclaimer](#-disclaimer)
 - [Licence](#-licence)
 
 ---
@@ -59,6 +61,7 @@ Everything here accompanies a video on the channel. You do not need to watch it 
 | See what has just been added | [Latest additions](#-latest-additions) |
 | Understand how to read a prompt file | [How a prompt file is laid out](#-how-a-prompt-file-is-laid-out) |
 | Report a prompt that failed, or fix something | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Know what this is and is not | [DISCLAIMER.md](DISCLAIMER.md) |
 
 ---
 
@@ -144,6 +147,9 @@ neumanntechtips-resources/
 ├── README.md                     this index
 ├── LICENSE                       Creative Commons Attribution 4.0
 ├── CONTRIBUTING.md               what helps, and the rule about real data
+├── DISCLAIMER.md                 what this is and is not, in ten short sections
+├── CODE_OF_CONDUCT.md            how to behave here, briefly
+├── SECURITY.md                   how to report real data or a credential, privately
 ├── .gitignore                    a safety net against committing data or secrets
 ├── .gitattributes                line endings and binary handling
 ├── .github/
@@ -195,6 +201,20 @@ Issues are open. The most useful things you can raise:
 - A correction. Errors get fixed and credited.
 
 Please do not paste real data, client information or anything identifying into an issue. Describe the shape of the problem instead.
+
+---
+
+## ⚠️ Disclaimer
+
+**Everything here is general information, not advice.** It is not legal, financial, compliance or regulatory advice, using it creates no professional relationship, and the views are the author's own rather than those of any employer or client.
+
+Two points deserve emphasis rather than a link.
+
+**Read what a model generates before you run it.** These prompts ask a model to write queries. Generated SQL can be wrong, slow, expensive or destructive. Run it against a copy first, never straight at production.
+
+**Every example here is fabricated.** No real record, schema, system or organisation appears anywhere in this repository.
+
+The full text, ten short sections, is in [DISCLAIMER.md](DISCLAIMER.md).
 
 ---
 
