@@ -14,6 +14,7 @@
 [![Report](https://img.shields.io/badge/report-privately-F2A93B?labelColor=0B2039)](#-how-to-report)
 [![Response](https://img.shields.io/badge/acknowledged-within%2048%20hours-5DBBD6?labelColor=0B2039)](#-what-happens-next)
 [![Scope](https://img.shields.io/badge/scope-real%20data%20%26%20credentials-2F5F7B?labelColor=0B2039)](#-report-these-privately-not-in-an-issue)
+
 `#Security` `#ResponsibleDisclosure` `#DataProtection` `#NeumannTechTips`
 
 [🏠 Home](README.md) · [📦 Packs](packs/) · [🤝 Contributing](CONTRIBUTING.md) · [⚠️ Disclaimer](DISCLAIMER.md) · [🛡️ Conduct](CODE_OF_CONDUCT.md) · [🔐 Reporting](SECURITY.md)

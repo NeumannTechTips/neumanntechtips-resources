@@ -17,7 +17,7 @@
 | | |
 | :-- | :-- |
 | 🎯 **Use it for** | Producing the profiling query that tells you what is actually in a table, before anyone argues about whether it is ready for AI. |
-| 📥 **You need** | The table name, the column list with declared types, and your SQL dialect. |
+| 📋 **You need** | The table name, the column list with declared types, and your SQL dialect. |
 | 📤 **Returns** | A single query returning one row per column: row count, null count and rate, distinct count, cardinality ratio, minimum, maximum, and the five most frequent values. |
 
 ---

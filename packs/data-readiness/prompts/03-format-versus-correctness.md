@@ -17,7 +17,7 @@
 | | |
 | :-- | :-- |
 | 🎯 **Use it for** | Building checks that tell you whether contact data is usable, not merely whether it is shaped correctly. |
-| 📥 **You need** | The column list for your contact fields, your SQL dialect, and the countries the data covers. |
+| 📋 **You need** | The column list for your contact fields, your SQL dialect, and the countries the data covers. |
 | 📤 **Returns** | A tiered set of checks, from cheap format validation to the checks that actually predict usability, with the cost of each stated. |
 
 ---

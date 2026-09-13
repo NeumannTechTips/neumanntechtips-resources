@@ -1,4 +1,4 @@
-# 🕳️ 02 · Null and default scan
+# ⭕ 02 · Null and default scan
 
 > Separates genuine values from defaults and sentinels
 
@@ -17,7 +17,7 @@
 | | |
 | :-- | :-- |
 | 🎯 **Use it for** | Separating real values from defaults, placeholders and sentinels that a null check will never catch. |
-| 📥 **You need** | The profile output from [prompt 01](01-column-profile.md). Aggregates only. |
+| 📋 **You need** | The profile output from [prompt 01](01-column-profile.md). Aggregates only. |
 | 📤 **Returns** | A ranked list of suspected default and sentinel values, what each one probably is, and the query to confirm it. |
 
 ---

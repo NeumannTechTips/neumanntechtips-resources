@@ -17,7 +17,7 @@
 | | |
 | :-- | :-- |
 | 🎯 **Use it for** | Designing a duplicate detection strategy that finds the records an exact-match check will never see. |
-| 📥 **You need** | Your column list, your dialect, and an honest statement of how the records were created. |
+| 📋 **You need** | Your column list, your dialect, and an honest statement of how the records were created. |
 | 📤 **Returns** | A blocking and scoring strategy, the SQL to implement it, and a threshold you can defend to somebody else. |
 
 ---

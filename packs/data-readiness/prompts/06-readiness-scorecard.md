@@ -17,7 +17,7 @@
 | | |
 | :-- | :-- |
 | 🎯 **Use it for** | Turning five technical findings into one page that a sponsor who does not write SQL can act on. |
-| 📥 **You need** | The outputs from prompts 01 to 05, and a one-line statement of what the data is meant to be used for. |
+| 📋 **You need** | The outputs from prompts 01 to 05, and a one-line statement of what the data is meant to be used for. |
 | 📤 **Returns** | A one-page assessment with a rating per dimension, the three things that matter most, and what each would take to fix. |
 
 ---

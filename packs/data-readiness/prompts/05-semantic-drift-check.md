@@ -17,7 +17,7 @@
 | | |
 | :-- | :-- |
 | 🎯 **Use it for** | Finding columns that stopped holding what their name says, usually years ago, usually without anybody recording it. |
-| 📥 **You need** | The profile output from [prompt 01](01-column-profile.md), the data dictionary if one exists, and a date column to slice by. |
+| 📋 **You need** | The profile output from [prompt 01](01-column-profile.md), the data dictionary if one exists, and a date column to slice by. |
 | 📤 **Returns** | Columns where the name, the declared type, the documentation and the actual contents disagree, with a query to demonstrate each. |
 
 ---

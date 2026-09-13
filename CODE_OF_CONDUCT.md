@@ -14,6 +14,7 @@
 [![Scope](https://img.shields.io/badge/scope-this%20repository-5DBBD6?labelColor=0B2039)](#-scope)
 [![Reports](https://img.shields.io/badge/reports-handled%20privately-2F5F7B?labelColor=0B2039)](#-reporting)
 [![Real data](https://img.shields.io/badge/real%20data-deleted%2C%20not%20edited-F2A93B?labelColor=0B2039)](#-the-rule-that-is-specific-to-this-project)
+
 `#CodeOfConduct` `#Community` `#NeumannTechTips`
 
 [🏠 Home](README.md) · [📦 Packs](packs/) · [🤝 Contributing](CONTRIBUTING.md) · [⚠️ Disclaimer](DISCLAIMER.md) · [🛡️ Conduct](CODE_OF_CONDUCT.md) · [🔐 Reporting](SECURITY.md)

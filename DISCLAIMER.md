@@ -15,6 +15,7 @@
 ![Version](https://img.shields.io/badge/version-1.0-5DBBD6?labelColor=0B2039)
 ![Updated](https://img.shields.io/badge/updated-13%20September%202026-2F5F7B?labelColor=0B2039)
 [![Warranty](https://img.shields.io/badge/warranty-none-8FA3B8?labelColor=0B2039)](LICENSE)
+
 `#Disclaimer` `#Governance` `#AI` `#NeumannTechTips`
 
 [🏠 Home](README.md) · [📦 Packs](packs/) · [🤝 Contributing](CONTRIBUTING.md) · [⚠️ Disclaimer](DISCLAIMER.md) · [🛡️ Conduct](CODE_OF_CONDUCT.md) · [🔐 Reporting](SECURITY.md)
