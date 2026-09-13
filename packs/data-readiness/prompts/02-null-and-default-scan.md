@@ -1,24 +1,34 @@
-# 02 · Null and default scan
+# 🕳️ 02 · Null and default scan
 
-[⬅ Back to the pack](../README.md) · Pack 01, Data readiness
+> Separates genuine values from defaults and sentinels
+
+[![Pack](https://img.shields.io/badge/pack-data%20readiness-5DBBD6?labelColor=0B2039)](../README.md)
+[![Step](https://img.shields.io/badge/step-02%20of%2006-2F5F7B?labelColor=0B2039)](../README.md#-use-them-in-order)
+[![Claude](https://img.shields.io/badge/Claude-tested-5DBBD6?labelColor=0B2039)](#-tested-on)
+[![Others](https://img.shields.io/badge/other%20models-not%20yet%20tested-8FA3B8?labelColor=0B2039)](#-tested-on)
+[![Episode](https://img.shields.io/badge/episode-EP--001-F2A93B?labelColor=0B2039)](#)
+
+`#DataQuality` `#AIReadiness` `#SQL` `#PromptEngineering` `#NeumannTechTips`
+
+[🏠 Home](../../../README.md) · [📦 Pack index](../README.md) · [⬅️ 01 Column profile](01-column-profile.md) · [03 Format versus correctness ➡️](03-format-versus-correctness.md)
 
 ---
 
-**Use it for** · Separating real values from defaults, placeholders and sentinels that a null check will never catch.
-
-**You need** · The profile output from [prompt 01](01-column-profile.md). Aggregates only.
-
-**Returns** · A ranked list of suspected default and sentinel values, what each one probably is, and the query to confirm it.
+| | |
+| :-- | :-- |
+| 🎯 **Use it for** | Separating real values from defaults, placeholders and sentinels that a null check will never catch. |
+| 📥 **You need** | The profile output from [prompt 01](01-column-profile.md). Aggregates only. |
+| 📤 **Returns** | A ranked list of suspected default and sentinel values, what each one probably is, and the query to confirm it. |
 
 ---
 
-## Why this is not just counting nulls
+## 🧠 Why this is not just counting nulls
 
 A null is honest. It tells you something is missing. The dangerous values are the ones that look like data: a date of birth of 1900-01-01, a mobile number of 0000000000, a surname of "Unknown", a status code that appears in 94% of rows. None of them is null. All of them are absence wearing a costume, and every one will be learned as signal by a model that cannot tell the difference.
 
 ---
 
-## The prompt
+## 💬 The prompt
 
 ```
 Below is aggregate profile output for a table being considered for AI
@@ -47,7 +57,7 @@ legitimate in some domains. Do not assume my business rules.
 
 ---
 
-## Worked example
+## 🧪 Worked example
 
 **Aggregate input** (synthetic)
 
@@ -75,7 +85,7 @@ The model added, without being asked, that `1970-01-01` at 0.9% is the Unix epoc
 
 ---
 
-## Known limits
+## ⚠️ Known limits
 
 | Limit | What to do |
 | --- | --- |
@@ -85,7 +95,7 @@ The model added, without being asked, that `1970-01-01` at 0.9% is the Unix epoc
 
 ---
 
-## Tested on
+## 🤖 Tested on
 
 | Model | Result | Note |
 | --- | --- | --- |
@@ -99,3 +109,11 @@ The model added, without being asked, that `1970-01-01` at 0.9% is the Unix epoc
 ---
 
 **Episode** · EP-001, *Six checks before you call your data AI-ready*
+
+<div align="center">
+
+[⬅️ 01 Column profile](01-column-profile.md) · [📦 Pack index](../README.md) · [03 Format versus correctness ➡️](03-format-versus-correctness.md)
+
+**[NeumannTechTips](https://www.youtube.com/@NeumannTechTips)** · Practical AI. Real results.
+
+</div>

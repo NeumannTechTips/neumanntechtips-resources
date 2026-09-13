@@ -1,18 +1,28 @@
-# 01 · Column profile
+# 🔬 01 · Column profile
 
-[⬅ Back to the pack](../README.md) · Pack 01, Data readiness
+> Writes the profiling query for your SQL dialect
+
+[![Pack](https://img.shields.io/badge/pack-data%20readiness-5DBBD6?labelColor=0B2039)](../README.md)
+[![Step](https://img.shields.io/badge/step-01%20of%2006-2F5F7B?labelColor=0B2039)](../README.md#-use-them-in-order)
+[![Claude](https://img.shields.io/badge/Claude-tested-5DBBD6?labelColor=0B2039)](#-tested-on)
+[![Others](https://img.shields.io/badge/other%20models-not%20yet%20tested-8FA3B8?labelColor=0B2039)](#-tested-on)
+[![Episode](https://img.shields.io/badge/episode-EP--001-F2A93B?labelColor=0B2039)](#)
+
+`#DataQuality` `#AIReadiness` `#SQL` `#PromptEngineering` `#NeumannTechTips`
+
+[🏠 Home](../../../README.md) · [📦 Pack index](../README.md) · ⬅️ _first in the pack_ · [02 Null and default scan ➡️](02-null-and-default-scan.md)
 
 ---
 
-**Use it for** · Producing the profiling query that tells you what is actually in a table, before anyone argues about whether it is ready for AI.
-
-**You need** · The table name, the column list with declared types, and your SQL dialect.
-
-**Returns** · A single query returning one row per column: row count, null count and rate, distinct count, cardinality ratio, minimum, maximum, and the five most frequent values.
+| | |
+| :-- | :-- |
+| 🎯 **Use it for** | Producing the profiling query that tells you what is actually in a table, before anyone argues about whether it is ready for AI. |
+| 📥 **You need** | The table name, the column list with declared types, and your SQL dialect. |
+| 📤 **Returns** | A single query returning one row per column: row count, null count and rate, distinct count, cardinality ratio, minimum, maximum, and the five most frequent values. |
 
 ---
 
-## The prompt
+## 💬 The prompt
 
 ```
 You are helping me profile a table before it is considered for AI model
@@ -42,7 +52,7 @@ Return the query and nothing else.
 
 ---
 
-## Worked example
+## 🧪 Worked example
 
 **Input given to the model**
 
@@ -85,7 +95,7 @@ aggregate without a lateral join per column.
 
 ---
 
-## Known limits
+## ⚠️ Known limits
 
 | Limit | What to do |
 | --- | --- |
@@ -99,7 +109,7 @@ aggregate without a lateral join per column.
 
 ---
 
-## Tested on
+## 🤖 Tested on
 
 | Model | Result | Note |
 | --- | --- | --- |
@@ -113,3 +123,11 @@ aggregate without a lateral join per column.
 ---
 
 **Episode** · EP-001, *Six checks before you call your data AI-ready*
+
+<div align="center">
+
+⬅️ _first in the pack_ · [📦 Pack index](../README.md) · [02 Null and default scan ➡️](02-null-and-default-scan.md)
+
+**[NeumannTechTips](https://www.youtube.com/@NeumannTechTips)** · Practical AI. Real results.
+
+</div>

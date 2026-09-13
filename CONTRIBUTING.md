@@ -1,8 +1,27 @@
-# Contributing
+<div align="center">
 
-Thank you for considering it. This repository is small, opinionated and maintained by one person, so here is exactly what helps and what does not.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/NeumannTechTips_Lockup_Horizontal_Tagline_OnDark.png">
+  <img alt="NeumannTechTips. Practical AI. Real results." src="assets/NeumannTechTips_Lockup_Horizontal_Tagline_OnLight.png" width="360">
+</picture>
+
+</div>
+
+# 🤝 Contributing
+
+> What helps, what does not, and the one rule that is not negotiable.
+
+[![Contributions](https://img.shields.io/badge/contributions-welcome-5DBBD6?labelColor=0B2039)](#-what-helps-most)
+[![Real data](https://img.shields.io/badge/real%20data-never-F2A93B?labelColor=0B2039)](#-read-this-first)
+[![Licence](https://img.shields.io/badge/contributions-CC%20BY%204.0-2F5F7B?labelColor=0B2039)](LICENSE)
+[![Language](https://img.shields.io/badge/language-UK%20English-8FA3B8?labelColor=0B2039)](#-if-you-are-opening-a-pull-request)
+`#Contributing` `#OpenSource` `#PromptEngineering` `#NeumannTechTips`
+
+[🏠 Home](README.md) · [📦 Packs](packs/) · [🤝 Contributing](CONTRIBUTING.md) · [⚠️ Disclaimer](DISCLAIMER.md) · [🛡️ Conduct](CODE_OF_CONDUCT.md) · [🔐 Reporting](SECURITY.md)
 
 ---
+
+Thank you for considering it. This repository is small, opinionated and maintained by one person, so here is exactly what helps and what does not.
 
 ## 🛑 Read this first
 
@@ -61,3 +80,13 @@ By contributing you agree that your contribution is licensed under [CC BY 4.0](L
 ## 💬 Anything else
 
 NeumannTechTips@pm.me, or a comment on the relevant video on the [channel](https://www.youtube.com/@NeumannTechTips).
+
+---
+
+<div align="center">
+
+**[NeumannTechTips](https://www.youtube.com/@NeumannTechTips)** · Practical AI. Real results.
+
+Questions or corrections: NeumannTechTips@pm.me
+
+</div>

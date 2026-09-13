@@ -1,18 +1,28 @@
-# 06 · Readiness scorecard
+# 📊 06 · Readiness scorecard
 
-[⬅ Back to the pack](../README.md) · Pack 01, Data readiness
+> Turns the findings into one page for a sponsor
+
+[![Pack](https://img.shields.io/badge/pack-data%20readiness-5DBBD6?labelColor=0B2039)](../README.md)
+[![Step](https://img.shields.io/badge/step-06%20of%2006-2F5F7B?labelColor=0B2039)](../README.md#-use-them-in-order)
+[![Claude](https://img.shields.io/badge/Claude-tested-5DBBD6?labelColor=0B2039)](#-tested-on)
+[![Others](https://img.shields.io/badge/other%20models-not%20yet%20tested-8FA3B8?labelColor=0B2039)](#-tested-on)
+[![Episode](https://img.shields.io/badge/episode-EP--001-F2A93B?labelColor=0B2039)](#)
+
+`#DataQuality` `#AIReadiness` `#SQL` `#PromptEngineering` `#NeumannTechTips`
+
+[🏠 Home](../../../README.md) · [📦 Pack index](../README.md) · [⬅️ 05 Semantic drift](05-semantic-drift-check.md) · _last in the pack_ ➡️
 
 ---
 
-**Use it for** · Turning five technical findings into one page that a sponsor who does not write SQL can act on.
-
-**You need** · The outputs from prompts 01 to 05, and a one-line statement of what the data is meant to be used for.
-
-**Returns** · A one-page assessment with a rating per dimension, the three things that matter most, and what each would take to fix.
+| | |
+| :-- | :-- |
+| 🎯 **Use it for** | Turning five technical findings into one page that a sponsor who does not write SQL can act on. |
+| 📥 **You need** | The outputs from prompts 01 to 05, and a one-line statement of what the data is meant to be used for. |
+| 📤 **Returns** | A one-page assessment with a rating per dimension, the three things that matter most, and what each would take to fix. |
 
 ---
 
-## Why the last step is the one people skip
+## 🧠 Why the last step is the one people skip
 
 The technical work produces a list of defects. A sponsor cannot act on a list of defects. They can act on "this dataset is not ready, here are the two things blocking it, the first takes a fortnight and the second takes a quarter, and here is what happens if we proceed anyway".
 
@@ -20,7 +30,7 @@ Translating between those two is the entire job. It is also the step that decide
 
 ---
 
-## The prompt
+## 💬 The prompt
 
 ```
 Turn the findings below into a one-page data readiness assessment for a
@@ -59,7 +69,7 @@ Rules:
 
 ---
 
-## Worked example
+## 🧪 Worked example
 
 **Verdict returned:** "Not ready. Two defects would each independently invalidate per-customer analysis, and both are fixable."
 
@@ -78,7 +88,7 @@ The "if we proceed anyway" section was the strongest part. Rather than restating
 
 ---
 
-## Known limits
+## ⚠️ Known limits
 
 | Limit | What to do |
 | --- | --- |
@@ -92,7 +102,7 @@ The "if we proceed anyway" section was the strongest part. Rather than restating
 
 ---
 
-## Tested on
+## 🤖 Tested on
 
 | Model | Result | Note |
 | --- | --- | --- |
@@ -106,3 +116,11 @@ The "if we proceed anyway" section was the strongest part. Rather than restating
 ---
 
 **Episode** · EP-001, *Six checks before you call your data AI-ready*
+
+<div align="center">
+
+[⬅️ 05 Semantic drift](05-semantic-drift-check.md) · [📦 Pack index](../README.md) · _last in the pack_ ➡️
+
+**[NeumannTechTips](https://www.youtube.com/@NeumannTechTips)** · Practical AI. Real results.
+
+</div>

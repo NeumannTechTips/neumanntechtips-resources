@@ -1,10 +1,27 @@
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/NeumannTechTips_Lockup_Horizontal_Tagline_OnDark.png">
+  <img alt="NeumannTechTips. Practical AI. Real results." src="assets/NeumannTechTips_Lockup_Horizontal_Tagline_OnLight.png" width="360">
+</picture>
+
+</div>
+
 # ⚠️ Disclaimer
 
-Applies to everything in this repository and to every video on the [NeumannTechTips](https://www.youtube.com/@NeumannTechTips) channel.
+> What this repository is, what it is not, and where the responsibility sits.
 
-**Version 1.0 · 13 September 2026**
+![Status](https://img.shields.io/badge/general%20information-not%20advice-F2A93B?labelColor=0B2039)
+![Version](https://img.shields.io/badge/version-1.0-5DBBD6?labelColor=0B2039)
+![Updated](https://img.shields.io/badge/updated-13%20September%202026-2F5F7B?labelColor=0B2039)
+[![Warranty](https://img.shields.io/badge/warranty-none-8FA3B8?labelColor=0B2039)](LICENSE)
+`#Disclaimer` `#Governance` `#AI` `#NeumannTechTips`
+
+[🏠 Home](README.md) · [📦 Packs](packs/) · [🤝 Contributing](CONTRIBUTING.md) · [⚠️ Disclaimer](DISCLAIMER.md) · [🛡️ Conduct](CODE_OF_CONDUCT.md) · [🔐 Reporting](SECURITY.md)
 
 ---
+
+Applies to everything in this repository and to every video on the [NeumannTechTips](https://www.youtube.com/@NeumannTechTips) channel.
 
 ### 1. General information only
 
@@ -51,3 +68,13 @@ This repository is revised over time. The version you are reading is the current
 ### Something wrong here?
 
 If anything in this repository is inaccurate, unsafe or has been misunderstood, [raise an issue](../../issues) or email NeumannTechTips@pm.me. Corrections are made and credited.
+
+---
+
+<div align="center">
+
+**[NeumannTechTips](https://www.youtube.com/@NeumannTechTips)** · Practical AI. Real results.
+
+Questions or corrections: NeumannTechTips@pm.me
+
+</div>

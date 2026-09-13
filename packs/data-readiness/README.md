@@ -1,13 +1,31 @@
-# 🔍 Pack 01: Data readiness
+<div align="center">
 
-Six prompts that take a dataset from "somebody says we should train a model on this" to a one-page assessment a sponsor can act on.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../../assets/NeumannTechTips_Lockup_Horizontal_Tagline_OnDark.png">
+  <img alt="NeumannTechTips. Practical AI. Real results." src="../../assets/NeumannTechTips_Lockup_Horizontal_Tagline_OnLight.png" width="360">
+</picture>
+
+</div>
+
+# 🔍 Pack 01 · Data readiness
+
+> Six prompts that take a dataset from "somebody says we should train a model on this" to a one-page assessment a sponsor can act on.
+
+[![Status](https://img.shields.io/badge/status-live-5DBBD6?labelColor=0B2039)](#)
+[![Prompts](https://img.shields.io/badge/prompts-6-2F5F7B?labelColor=0B2039)](#-use-them-in-order)
+[![Episode](https://img.shields.io/badge/episode-EP--001-F2A93B?labelColor=0B2039)](#)
+[![Data](https://img.shields.io/badge/your%20data-never%20leaves-5DBBD6?labelColor=0B2039)](#-the-rule-this-pack-is-built-on)
+[![Licence](https://img.shields.io/badge/licence-CC%20BY%204.0-8FA3B8?labelColor=0B2039)](../../LICENSE)
+
+`#DataQuality` `#AIReadiness` `#SQL` `#PromptEngineering` `#NeumannTechTips`
+
+[🏠 Repository home](../../README.md) · [⚠️ Disclaimer](../../DISCLAIMER.md) · [🤝 Contributing](../../CONTRIBUTING.md)
 
 **Companion episode:** EP-001, *Six checks before you call your data AI-ready*
-**Licence:** [CC BY 4.0](../../LICENSE) · **Status:** Live
 
 ---
 
-## The rule this pack is built on
+## 🔐 The rule this pack is built on
 
 **Your data never goes into the model. The query does.**
 
@@ -23,7 +41,7 @@ If a prompt collection asks you to paste customer records into a model to check 
 
 ---
 
-## Use them in order
+## 🧭 Use them in order
 
 Each prompt feeds the next. Running them out of sequence works, but you will do more thinking yourself.
 
@@ -38,7 +56,7 @@ Each prompt feeds the next. Running them out of sequence works, but you will do 
 
 ---
 
-## What you need before you start
+## 📋 What you need before you start
 
 - Read access to the table or an extract of it, and permission to run aggregate queries against it.
 - The data dictionary, or whatever passes for one. Its absence is itself a finding.
@@ -46,7 +64,7 @@ Each prompt feeds the next. Running them out of sequence works, but you will do 
 
 ---
 
-## What this pack will not do
+## 🚫 What this pack will not do
 
 - It will not tell you a dataset is fit for a given use. It tells you what is wrong with it, and how badly. The decision remains yours.
 - It will not clean anything. Remediation is a separate problem, and a much larger one.
@@ -54,7 +72,7 @@ Each prompt feeds the next. Running them out of sequence works, but you will do 
 
 ---
 
-## Compatibility at a glance
+## 🤖 Compatibility at a glance
 
 | Prompt | Claude | ChatGPT | Gemini | Grok | Copilot | Open-weight, local |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -68,3 +86,13 @@ Each prompt feeds the next. Running them out of sequence works, but you will do 
 ✅ works as written · ⚠️ works with a stated caveat · ❌ not reliable · ⏳ not yet tested
 
 Results are filled in as each model is tested. A mark is never entered on expectation.
+
+---
+
+<div align="center">
+
+**[NeumannTechTips](https://www.youtube.com/@NeumannTechTips)** · Practical AI. Real results.
+
+[🏠 Repository home](../../README.md) · [⚠️ Disclaimer](../../DISCLAIMER.md)
+
+</div>

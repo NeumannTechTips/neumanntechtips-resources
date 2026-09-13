@@ -1,18 +1,28 @@
-# 03 · Format versus correctness
+# 📞 03 · Format versus correctness
 
-[⬅ Back to the pack](../README.md) · Pack 01, Data readiness
+> Distinguishes well formed from actually usable
+
+[![Pack](https://img.shields.io/badge/pack-data%20readiness-5DBBD6?labelColor=0B2039)](../README.md)
+[![Step](https://img.shields.io/badge/step-03%20of%2006-2F5F7B?labelColor=0B2039)](../README.md#-use-them-in-order)
+[![Claude](https://img.shields.io/badge/Claude-tested-5DBBD6?labelColor=0B2039)](#-tested-on)
+[![Others](https://img.shields.io/badge/other%20models-not%20yet%20tested-8FA3B8?labelColor=0B2039)](#-tested-on)
+[![Episode](https://img.shields.io/badge/episode-EP--001-F2A93B?labelColor=0B2039)](#)
+
+`#DataQuality` `#AIReadiness` `#SQL` `#PromptEngineering` `#NeumannTechTips`
+
+[🏠 Home](../../../README.md) · [📦 Pack index](../README.md) · [⬅️ 02 Null and default scan](02-null-and-default-scan.md) · [04 Duplicates beyond exact match ➡️](04-duplicates-beyond-exact-match.md)
 
 ---
 
-**Use it for** · Building checks that tell you whether contact data is usable, not merely whether it is shaped correctly.
-
-**You need** · The column list for your contact fields, your SQL dialect, and the countries the data covers.
-
-**Returns** · A tiered set of checks, from cheap format validation to the checks that actually predict usability, with the cost of each stated.
+| | |
+| :-- | :-- |
+| 🎯 **Use it for** | Building checks that tell you whether contact data is usable, not merely whether it is shaped correctly. |
+| 📥 **You need** | The column list for your contact fields, your SQL dialect, and the countries the data covers. |
+| 📤 **Returns** | A tiered set of checks, from cheap format validation to the checks that actually predict usability, with the cost of each stated. |
 
 ---
 
-## The distinction that matters
+## 🧠 The distinction that matters
 
 A regular expression tells you an email address is correctly shaped. It tells you nothing about whether anybody reads it. `finance@company.invalid` passes every syntax check ever written and has never delivered a message.
 
@@ -22,7 +32,7 @@ Most data quality dashboards report the first and imply the second.
 
 ---
 
-## The prompt
+## 💬 The prompt
 
 ```
 I need to assess contact data quality for a dataset being prepared for AI
@@ -55,7 +65,7 @@ going into model training rather than into a live campaign.
 
 ---
 
-## Worked example
+## 🧪 Worked example
 
 The output's most useful section was Tier 2, which included a check most teams never run: comparing the count of distinct email domains against the row count, and flagging any single domain holding more than a threshold share. On synthetic data seeded with a defect, this surfaced 4.1% of rows sharing one internal domain, which is the signature of a bulk import that filled a mandatory field with a system address.
 
@@ -63,7 +73,7 @@ Its closing sentence was that for training data, tier 2 is the sensible stopping
 
 ---
 
-## Known limits
+## ⚠️ Known limits
 
 | Limit | What to do |
 | --- | --- |
@@ -76,7 +86,7 @@ Its closing sentence was that for training data, tier 2 is the sensible stopping
 
 ---
 
-## Tested on
+## 🤖 Tested on
 
 | Model | Result | Note |
 | --- | --- | --- |
@@ -90,3 +100,11 @@ Its closing sentence was that for training data, tier 2 is the sensible stopping
 ---
 
 **Episode** · EP-001, *Six checks before you call your data AI-ready*
+
+<div align="center">
+
+[⬅️ 02 Null and default scan](02-null-and-default-scan.md) · [📦 Pack index](../README.md) · [04 Duplicates beyond exact match ➡️](04-duplicates-beyond-exact-match.md)
+
+**[NeumannTechTips](https://www.youtube.com/@NeumannTechTips)** · Practical AI. Real results.
+
+</div>

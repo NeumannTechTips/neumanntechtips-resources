@@ -1,18 +1,28 @@
-# 04 · Duplicates beyond exact match
+# 👥 04 · Duplicates beyond exact match
 
-[⬅ Back to the pack](../README.md) · Pack 01, Data readiness
+> Finds what a key based check never sees
+
+[![Pack](https://img.shields.io/badge/pack-data%20readiness-5DBBD6?labelColor=0B2039)](../README.md)
+[![Step](https://img.shields.io/badge/step-04%20of%2006-2F5F7B?labelColor=0B2039)](../README.md#-use-them-in-order)
+[![Claude](https://img.shields.io/badge/Claude-tested-5DBBD6?labelColor=0B2039)](#-tested-on)
+[![Others](https://img.shields.io/badge/other%20models-not%20yet%20tested-8FA3B8?labelColor=0B2039)](#-tested-on)
+[![Episode](https://img.shields.io/badge/episode-EP--001-F2A93B?labelColor=0B2039)](#)
+
+`#DataQuality` `#AIReadiness` `#SQL` `#PromptEngineering` `#NeumannTechTips`
+
+[🏠 Home](../../../README.md) · [📦 Pack index](../README.md) · [⬅️ 03 Format versus correctness](03-format-versus-correctness.md) · [05 Semantic drift ➡️](05-semantic-drift-check.md)
 
 ---
 
-**Use it for** · Designing a duplicate detection strategy that finds the records an exact-match check will never see.
-
-**You need** · Your column list, your dialect, and an honest statement of how the records were created.
-
-**Returns** · A blocking and scoring strategy, the SQL to implement it, and a threshold you can defend to somebody else.
+| | |
+| :-- | :-- |
+| 🎯 **Use it for** | Designing a duplicate detection strategy that finds the records an exact-match check will never see. |
+| 📥 **You need** | Your column list, your dialect, and an honest statement of how the records were created. |
+| 📤 **Returns** | A blocking and scoring strategy, the SQL to implement it, and a threshold you can defend to somebody else. |
 
 ---
 
-## Why exact matching finds the easy ones
+## 🧠 Why exact matching finds the easy ones
 
 Deduplicating on a key finds the records that were inserted twice. That is the smallest category and the least interesting one.
 
@@ -20,7 +30,7 @@ The duplicates that matter are the ones a human created: the same customer enter
 
 ---
 
-## The prompt
+## 💬 The prompt
 
 ```
 I need to find non-exact duplicates in a dataset before it is used for AI.
@@ -57,7 +67,7 @@ Be explicit about what this approach will still miss.
 
 ---
 
-## Worked example
+## 🧪 Worked example
 
 The most valuable part of the output was section 2, specifically the weighting reasoning. It rated a shared mobile number as strong evidence but noted two failure cases: shared household landlines, and the placeholder numbers found by [prompt 03](03-format-versus-correctness.md), which will match thousands of unrelated records to each other. It recommended excluding any value appearing more than a small number of times from the matching entirely, which is a correction most naive implementations miss.
 
@@ -67,7 +77,7 @@ That dependency between prompts is real. Run 02 and 03 before this one.
 
 ---
 
-## Known limits
+## ⚠️ Known limits
 
 | Limit | What to do |
 | --- | --- |
@@ -78,7 +88,7 @@ That dependency between prompts is real. Run 02 and 03 before this one.
 
 ---
 
-## Tested on
+## 🤖 Tested on
 
 | Model | Result | Note |
 | --- | --- | --- |
@@ -92,3 +102,11 @@ That dependency between prompts is real. Run 02 and 03 before this one.
 ---
 
 **Episode** · EP-001, *Six checks before you call your data AI-ready*
+
+<div align="center">
+
+[⬅️ 03 Format versus correctness](03-format-versus-correctness.md) · [📦 Pack index](../README.md) · [05 Semantic drift ➡️](05-semantic-drift-check.md)
+
+**[NeumannTechTips](https://www.youtube.com/@NeumannTechTips)** · Practical AI. Real results.
+
+</div>
